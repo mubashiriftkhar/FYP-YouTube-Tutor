@@ -1,3 +1,8 @@
+import sys
+import os
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+sys.path.append(ROOT_DIR)
 import streamlit as st
 from utils.styles import apply_styles
 from components.chat import chat_ui

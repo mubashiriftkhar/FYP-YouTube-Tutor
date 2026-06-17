@@ -18,6 +18,8 @@ class SimilaritySearch(BaseClass):
         return results
     
     def execute(self, state) -> State:
+        state["TitledQuery"]=state["vedioTitle"]+" "+state["query"]
+        print(f"Similarity Search:{state}")
         query=state["TitledQuery"]
         chunks=state["chunks"]
         embbedings=state["embeddings"]

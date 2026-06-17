@@ -10,6 +10,9 @@ class KeywordSearch(BaseClass):
     """
 
     def execute(self, state) -> State:
+        # state["TitledQuery"]=state["vedioTitle"]+" "+state["query"]
+        print(f"Keyword Search:{state}")
+
         query=state["TitledQuery"]
         chunks=state["chunks"]
         self.vectorizer = TfidfVectorizer(stop_words="english")

@@ -6,7 +6,7 @@ from Backend.SimilaritySearch import SimilaritySearch
 from Backend.KeywordSearch import KeywordSearch
 from Backend.Merger import MergeSearches
 from Backend.Reranker import Reranker
-from Backend.QueryCleaner import Querycleaner
+# from Backend.QueryCleaner import Querycleaner
 # from Backend.GetAnswer import results
 # from Backend.SummarizerAgent import Summarizer
 # import multiprocessing
@@ -26,7 +26,7 @@ class orchestrator():
                      
         ]
         self.pipeline_2=[
-            Querycleaner(),
+            # Querycleaner(),
             SimilaritySearch(),          
             KeywordSearch(),             
             MergeSearches(),             
